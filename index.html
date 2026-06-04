@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Nureka helps learners think like engineers through guided discovery, reasoning, and understanding why computer science concepts exist before memorizing definitions.">
+  <meta name="keywords"
+    content="computer science, learning, education, programming, data structures, algorithms, EdTech, Socratic learning, engineering thinking">
+  <meta property="og:title" content="Nureka — Discover Concepts. Don't Memorize Them.">
+  <meta property="og:description"
+    content="Nureka helps learners think like engineers by discovering why computer science concepts exist before memorizing definitions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nureka — Discover Concepts. Don't Memorize Them.">
+  <meta name="twitter:description"
+    content="Nureka helps learners think like engineers by discovering why computer science concepts exist before memorizing definitions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <title>Nureka — Discover Concepts. Don't Memorize Them.</title>
+</head>
+
+<body>
+
+  <!-- ============ NAVBAR — Single sticky nav ============ -->
+  <header class="site-header" role="banner">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo" aria-label="Nureka home">
+          <img src="logo.svg" alt="" class="navbar__logo-img">
+          Nureka
+        </a>
+        <ul class="navbar__nav" role="list">
+          <li><a href="#learning-journey">Journey</a></li>
+          <li><a href="#why-understanding-matters">Why Nureka</a></li>
+          <li><a href="#discover-concepts">Concepts</a></li>
+          <li><a href="#the-nureka-method">The Method</a></li>
+          <li><a href="#think-like-an-engineer">Case Studies</a></li>
+        </ul>
+        <div class="navbar__actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" type="button">
+            <!-- Sun icon -->
+            <svg class="theme-toggle__sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <!-- Moon icon -->
+            <svg class="theme-toggle__moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+          <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary"
+            target="_blank" rel="noopener noreferrer">
+            Try Nureka on ChatGPT
+          </a>
+        </div>
+        <button class="navbar__hamburger" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+          type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <!-- Mobile menu — hidden on desktop -->
+      <div class="navbar__mobile" id="mobileMenu">
+        <a href="#learning-journey">Journey</a>
+        <a href="#why-understanding-matters">Why Nureka</a>
+        <a href="#discover-concepts">Concepts</a>
+        <a href="#the-nureka-method">The Method</a>
+        <a href="#think-like-an-engineer">Case Studies</a>
+        <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary"
+          target="_blank" rel="noopener noreferrer">
+          Try Nureka on ChatGPT
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero" aria-labelledby="heroTitle">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__badge reveal">
+            <span class="hero__badge-icon" aria-hidden="true">🧠</span>
+            The Socratic Companion for Computer Science
+          </div>
+          <h1 class="hero__title reveal" id="heroTitle">
+            Discover Concepts.<br><em>Don't Memorize Them.</em>
+          </h1>
+          <p class="hero__desc reveal">
+            Nureka helps learners think like engineers by discovering why computer science concepts exist before
+            memorizing definitions. Learn through reasoning, curiosity, and guided discovery.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka"
+              class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
+              Try Nureka on ChatGPT
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LEARNING JOURNEY — Timeline ============ -->
+    <section class="journey" id="learning-journey" aria-labelledby="journeyTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="journeyTitle">The Learning Journey</h2>
+        </div>
+        <ol class="journey__track" aria-label="Learning journey steps">
+          <li class="journey__step reveal reveal-d1">
+            <div class="journey__circle" aria-hidden="true">01</div>
+            <h3 class="journey__title">Problem</h3>
+            <p class="journey__desc">Every concept begins with a real-world challenge that demands a solution.</p>
+          </li>
+          <li class="journey__step reveal reveal-d2">
+            <div class="journey__circle" aria-hidden="true">02</div>
+            <h3 class="journey__title">Thinking</h3>
+            <p class="journey__desc">You explore the problem space, asking questions and reasoning through
+              possibilities.</p>
+          </li>
+          <li class="journey__step reveal reveal-d3">
+            <div class="journey__circle" aria-hidden="true">03</div>
+            <h3 class="journey__title">Discovery</h3>
+            <p class="journey__desc">Through guided questions, you arrive at the insight naturally and organically.</p>
+          </li>
+          <li class="journey__step reveal reveal-d4">
+            <div class="journey__circle" aria-hidden="true">04</div>
+            <h3 class="journey__title">Understanding</h3>
+            <p class="journey__desc">The concept clicks — not because you memorized it, but because you derived it.</p>
+          </li>
+          <li class="journey__step reveal reveal-d5">
+            <div class="journey__circle" aria-hidden="true">05</div>
+            <h3 class="journey__title">Application</h3>
+            <p class="journey__desc">You apply the concept with confidence because you understand its purpose.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ WHY UNDERSTANDING MATTERS ============ -->
+    <section class="comparison" id="why-understanding-matters" aria-labelledby="comparisonTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="comparisonTitle">Why Understanding Matters</h2>
+        </div>
+        <div class="comparison__grid">
+          <!-- Traditional — muted -->
+          <article class="comparison__card comparison__card--traditional reveal"
+            aria-label="Traditional learning approach">
+            <h3 class="comparison__card-label">Traditional Learning</h3>
+            <ol class="comparison__steps" aria-label="Traditional learning steps">
+              <li class="comparison__step">
+                <span class="comparison__step-num">1</span>
+                <span class="comparison__step-text">Definition</span>
+              </li>
+              <li class="comparison__step">
+                <span class="comparison__step-num">2</span>
+                <span class="comparison__step-text">Memorization</span>
+              </li>
+              <li class="comparison__step">
+                <span class="comparison__step-num">3</span>
+                <span class="comparison__step-text">Short-Term Recall</span>
+              </li>
+            </ol>
+          </article>
+          <!-- Nureka — highlighted -->
+          <article class="comparison__card comparison__card--nureka reveal" aria-label="Nureka learning approach">
+            <h3 class="comparison__card-label">Nureka Learning</h3>
+            <ol class="comparison__steps" aria-label="Nureka learning steps">
+              <li class="comparison__step">
+                <span class="comparison__step-num">1</span>
+                <span class="comparison__step-text">Problem</span>
+              </li>
+              <li class="comparison__step">
+                <span class="comparison__step-num">2</span>
+                <span class="comparison__step-text">Reasoning</span>
+              </li>
+              <li class="comparison__step">
+                <span class="comparison__step-num">3</span>
+                <span class="comparison__step-text">Discovery</span>
+              </li>
+              <li class="comparison__step">
+                <span class="comparison__step-num">4</span>
+                <span class="comparison__step-text">Understanding</span>
+              </li>
+            </ol>
+          </article>
+        </div>
+        <!-- Large center statement -->
+        <div class="comparison__statement reveal">
+          <p class="comparison__statement-text">Don't just learn what.<br><em>Learn why.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONCEPTS — Premium 2×2 Grid ============ -->
+    <section class="concepts" id="discover-concepts" aria-labelledby="conceptsTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="conceptsTitle">Discover Concepts Through Questions</h2>
+          <p class="section-subtitle">Every great concept began as a problem someone needed to solve.</p>
+        </div>
+        <div class="concepts__grid">
+          <article class="concept-card reveal" tabindex="0" role="button">
+            <span class="concept-card__label">The Problem</span>
+            <p class="concept-card__question">How do you find one contact among a million?</p>
+            <div class="concept-card__divider"></div>
+            <div class="concept-card__answer-container">
+              <div class="concept-card__reveal-btn">
+                <span>Reveal Solution 💡</span>
+              </div>
+              <div class="concept-card__answer-content">
+                <span class="concept-card__answer-label">The Solution</span>
+                <h3 class="concept-card__answer">Hash Tables</h3>
+              </div>
+            </div>
+          </article>
+          <article class="concept-card reveal reveal-d1" tabindex="0" role="button">
+            <span class="concept-card__label">The Problem</span>
+            <p class="concept-card__question">How do you find a book in a huge library?</p>
+            <div class="concept-card__divider"></div>
+            <div class="concept-card__answer-container">
+              <div class="concept-card__reveal-btn">
+                <span>Reveal Solution 💡</span>
+              </div>
+              <div class="concept-card__answer-content">
+                <span class="concept-card__answer-label">The Solution</span>
+                <h3 class="concept-card__answer">Database Indexes</h3>
+              </div>
+            </div>
+          </article>
+          <article class="concept-card reveal reveal-d2" tabindex="0" role="button">
+            <span class="concept-card__label">The Problem</span>
+            <p class="concept-card__question">What happens when everyone waits on everyone else?</p>
+            <div class="concept-card__divider"></div>
+            <div class="concept-card__answer-container">
+              <div class="concept-card__reveal-btn">
+                <span>Reveal Solution 💡</span>
+              </div>
+              <div class="concept-card__answer-content">
+                <span class="concept-card__answer-label">The Solution</span>
+                <h3 class="concept-card__answer">Deadlocks</h3>
+              </div>
+            </div>
+          </article>
+          <article class="concept-card reveal reveal-d3" tabindex="0" role="button">
+            <span class="concept-card__label">The Problem</span>
+            <p class="concept-card__question">How can information arrive reliably over a network?</p>
+            <div class="concept-card__divider"></div>
+            <div class="concept-card__answer-container">
+              <div class="concept-card__reveal-btn">
+                <span>Reveal Solution 💡</span>
+              </div>
+              <div class="concept-card__answer-content">
+                <span class="concept-card__answer-label">The Solution</span>
+                <h3 class="concept-card__answer">TCP</h3>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE NUREKA METHOD — Chat Interface ============ -->
+    <section class="method" id="the-nureka-method" aria-labelledby="methodTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="methodTitle">The Nureka Method</h2>
+          <p class="section-subtitle">See how a conversation naturally leads to discovery.</p>
+        </div>
+        <div class="method__demo reveal" aria-label="Example Nureka conversation">
+          <div class="method__window-bar" aria-hidden="true">
+            <span class="method__dot"></span>
+            <span class="method__dot"></span>
+            <span class="method__dot"></span>
+            <span class="method__window-title">Nureka — Chat</span>
+          </div>
+          <div class="method__chat" id="methodChat" role="log" aria-live="polite">
+            <div class="chat-msg chat-msg--student">
+              <span class="chat-msg__sender">Student</span>
+              <div class="chat-msg__bubble">
+                <p>I'm trying to understand how fast lookups work.</p>
+              </div>
+            </div>
+            <div class="chat-msg chat-msg--nureka">
+              <span class="chat-msg__sender">Nureka</span>
+              <div class="chat-msg__bubble">
+                <p>Imagine you have one million contacts. Would you check every contact one by one?</p>
+              </div>
+            </div>
+            <div class="chat-msg chat-msg--student">
+              <span class="chat-msg__sender">Student</span>
+              <div class="chat-msg__bubble">
+                <p>No, I would look for a shortcut.</p>
+              </div>
+            </div>
+            <div class="chat-msg chat-msg--nureka">
+              <span class="chat-msg__sender">Nureka</span>
+              <div class="chat-msg__bubble">
+                <p>Exactly. That need for a shortcut led engineers to create <strong>Hash Tables</strong>.</p>
+              </div>
+            </div>
+            <!-- Typing Indicator (initially hidden) -->
+            <div class="chat-msg chat-msg--nureka chat-msg--typing" id="chatTypingIndicator">
+              <span class="chat-msg__sender">Nureka</span>
+              <div class="chat-msg__bubble">
+                <div class="typing-indicator">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Conversion CTA Footer -->
+          <div class="method__footer">
+            <div class="method__cta">
+              <span class="method__cta-text">Ready to explore this idea?</span>
+              <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">
+                Try Nureka on ChatGPT &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT YOU CAN LEARN — Feature Cards ============ -->
+    <section class="topics" id="what-you-can-learn" aria-labelledby="topicsTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="topicsTitle">What You Can Learn</h2>
+          <p class="section-subtitle">Explore the full breadth of computer science through guided discovery.</p>
+        </div>
+        <div class="topics__grid">
+          <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="topic-card reveal"
+            target="_blank" rel="noopener noreferrer">
+            <span class="topic-card__icon" aria-hidden="true">⚙️</span>
+            <span class="topic-card__name">Programming</span>
+          </a>
+          <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="topic-card reveal reveal-d1"
+            target="_blank" rel="noopener noreferrer">
+            <span class="topic-card__icon" aria-hidden="true">🌲</span>
+            <span class="topic-card__name">Data Structures &amp; Algorithms</span>
+          </a>
+          <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="topic-card reveal reveal-d2"
+            target="_blank" rel="noopener noreferrer">
+            <span class="topic-card__icon" aria-hidden="true">🖥️</span>
+            <span class="topic-card__name">Operating Systems</span>
+          </a>
+          <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="topic-card reveal reveal-d3"
+            target="_blank" rel="noopener noreferrer">
+            <span class="topic-card__icon" aria-hidden="true">🗄️</span>
+            <span class="topic-card__name">Databases</span>
+          </a>
+          <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="topic-card reveal reveal-d4"
+            target="_blank" rel="noopener noreferrer">
+            <span class="topic-card__icon" aria-hidden="true">🌐</span>
+            <span class="topic-card__name">Computer Networks</span>
+          </a>
+          <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="topic-card reveal reveal-d5"
+            target="_blank" rel="noopener noreferrer">
+            <span class="topic-card__icon" aria-hidden="true">🏗️</span>
+            <span class="topic-card__name">System Design</span>
+          </a>
+          <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="topic-card reveal reveal-d6"
+            target="_blank" rel="noopener noreferrer">
+            <span class="topic-card__icon" aria-hidden="true">🤖</span>
+            <span class="topic-card__name">AI &amp; Machine Learning</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THINK LIKE AN ENGINEER — 3 Premium Cards ============ -->
+    <section class="engineer" id="think-like-an-engineer" aria-labelledby="engineerTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="engineerTitle">Think Like an Engineer</h2>
+          <p class="section-subtitle">Every concept exists because a problem needed a solution.</p>
+        </div>
+        <div class="engineer__grid">
+          <article class="engineer-card reveal">
+            <span class="engineer-card__scenario-label">The Scenario</span>
+            <h3 class="engineer-card__scenario">Phone Book Search</h3>
+            <div class="engineer-card__arrow" aria-hidden="true">↓</div>
+            <span class="engineer-card__concept-label">The Concept</span>
+            <p class="engineer-card__result">Why Binary Search Exists</p>
+          </article>
+          <article class="engineer-card reveal reveal-d1">
+            <span class="engineer-card__scenario-label">The Scenario</span>
+            <h3 class="engineer-card__scenario">Shared Printer Problem</h3>
+            <div class="engineer-card__arrow" aria-hidden="true">↓</div>
+            <span class="engineer-card__concept-label">The Concept</span>
+            <p class="engineer-card__result">Why Process Scheduling Exists</p>
+          </article>
+          <article class="engineer-card reveal reveal-d2">
+            <span class="engineer-card__scenario-label">The Scenario</span>
+            <h3 class="engineer-card__scenario">1 Million Contacts</h3>
+            <div class="engineer-card__arrow" aria-hidden="true">↓</div>
+            <span class="engineer-card__concept-label">The Concept</span>
+            <p class="engineer-card__result">Why Hash Tables Exist</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA — High Contrast ============ -->
+    <section class="cta-section" id="final-cta" aria-labelledby="ctaTitle">
+      <div class="container">
+        <div class="cta-section__inner reveal">
+          <h2 class="cta-section__title" id="ctaTitle">Start Thinking Like an Engineer.</h2>
+          <p class="cta-section__desc">Discover concepts through reasoning, not memorization.</p>
+          <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary btn--large"
+            target="_blank" rel="noopener noreferrer">
+            Try Nureka on ChatGPT
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER — Minimal ============ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <img src="logo.svg" alt="" class="footer__logo-img">
+          Nureka
+        </div>
+        <p class="footer__tagline">Discover Concepts. Don't Memorize Them.</p>
+        <p class="footer__credit">Built by <strong>Sai Rajiv</strong></p>
+        <p class="footer__copy">&copy; 2026 Nureka. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js?v=2"></script>
+
+</body>
+
+</html>

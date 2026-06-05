@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Learn how Nureka helps you discover computer science concepts through Socratic questioning rather than dry memorization.">
+  <meta name="keywords"
+    content="computer science, learning, education, programming, data structures, algorithms, EdTech, Socratic learning, engineering thinking">
+  <meta property="og:title" content="Nureka — How It Works">
+  <meta property="og:description"
+    content="Learn how Nureka helps you discover computer science concepts through Socratic questioning rather than dry memorization.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nureka.vercel.app/about.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <title>How Nureka Works — Socratic CS Companion</title>
+</head>
+
+<body>
+
+  <!-- ============ NAVBAR — Single sticky nav ============ -->
+  <header class="site-header" role="banner">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo" aria-label="Nureka home">
+          <img src="logo.svg" alt="" class="navbar__logo-img">
+          Nureka
+        </a>
+        <ul class="navbar__nav" role="list">
+          <li><a href="index.html#learning-journey">Journey</a></li>
+          <li><a href="index.html#why-understanding-matters">Why Nureka</a></li>
+          <li><a href="index.html#who-is-this-for">For Whom</a></li>
+          <li><a href="index.html#discover-concepts">Concepts</a></li>
+          <li><a href="index.html#the-nureka-method">The Method</a></li>
+          <li><a href="index.html#think-like-an-engineer">Case Studies</a></li>
+        </ul>
+        <div class="navbar__actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" type="button">
+            <!-- Sun icon -->
+            <svg class="theme-toggle__sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <!-- Moon icon -->
+            <svg class="theme-toggle__moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+          <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary"
+            target="_blank" rel="noopener noreferrer">
+            Try Nureka on ChatGPT
+          </a>
+        </div>
+        <button class="navbar__hamburger" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+          type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <!-- Mobile menu — hidden on desktop -->
+      <div class="navbar__mobile" id="mobileMenu">
+        <a href="index.html#learning-journey">Journey</a>
+        <a href="index.html#why-understanding-matters">Why Nureka</a>
+        <a href="index.html#who-is-this-for">For Whom</a>
+        <a href="index.html#discover-concepts">Concepts</a>
+        <a href="index.html#the-nureka-method">The Method</a>
+        <a href="index.html#think-like-an-engineer">Case Studies</a>
+        <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary"
+          target="_blank" rel="noopener noreferrer">
+          Try Nureka on ChatGPT
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============ HERO ============ -->
+    <section class="about-hero">
+      <div class="container">
+        <div class="about-hero__inner">
+          <span class="about-hero__badge">How It Works</span>
+          <h1 class="about-hero__title">Designed for Deep<br><em>Engineering Intuition</em></h1>
+          <p class="about-hero__desc">Learn how Nureka transforms passive computer science study into an active journey
+            of guided Socratic discovery.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT IS NUREKA & WHY SOCRATIC SECTION ============ -->
+    <section class="about-mission" aria-labelledby="missionTitle">
+      <div class="container">
+        <h2 class="sr-only" id="missionTitle">What is Nureka and Why Active Discovery?</h2>
+        <div class="about-mission__grid">
+          <!-- What is Nureka card -->
+          <article class="about-card about-card--mission reveal">
+            <div class="about-card__icon" aria-hidden="true">💡</div>
+            <h3 class="about-card__title">What is Nureka?</h3>
+            <p class="about-card__desc">
+              Nureka is an AI Computer Science companion available as a Custom GPT. It acts like a computer science mentor
+              that guides you through coding, data structures, and architecture through Socratic conversation, rather
+              than simple copy-paste lectures.
+            </p>
+          </article>
+
+          <!-- Why Active Discovery card -->
+          <article class="about-card about-card--mission reveal reveal-d1">
+            <div class="about-card__icon" aria-hidden="true">🧠</div>
+            <h3 class="about-card__title">Why Socratic Learning?</h3>
+            <p class="about-card__desc">
+              Reading definitions or watching videos is passive learning—you experience "illusion of competence" but
+              forget concepts quickly. Nureka forces you to reason actively. By deriving concepts from first principles,
+              you build deeper understanding and longer-lasting memory.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY WAS NUREKA CREATED SECTION ============ -->
+    <section class="about-origin" aria-labelledby="originTitle">
+      <div class="container">
+        <div class="about-origin__card reveal">
+          <span class="about-origin__badge" id="originTitle">Why Nureka Was Created</span>
+          <blockquote class="about-origin__quote">
+            "Nureka was created after realizing that memorizing definitions helped pass exams but rarely built true
+            engineering intuition. The goal is simple: learn concepts the way engineers discover them."
+          </blockquote>
+          <cite class="about-origin__author">&mdash; Sai Rajiv, Creator of Nureka</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHO NUREKA IS FOR SECTION ============ -->
+    <section class="about-cohorts" aria-labelledby="cohortsTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="cohortsTitle">Who Nureka Helps Most</h2>
+          <p class="section-subtitle">Tailored for learners who want to master computer science, not just memorize
+            syntax.</p>
+        </div>
+        <div class="about-cohorts__grid">
+          <article class="about-card about-card--cohort reveal">
+            <div class="about-card__cohort-badge">Academic Excellence</div>
+            <h3 class="about-card__title">College Students</h3>
+            <p class="about-card__desc">Escape the cycle of cramming dry theory for semester exams. Nureka helps you
+              understand the "why" behind the syllabus so you can write answers in your own words with complete
+              confidence.</p>
+          </article>
+          <article class="about-card about-card--cohort reveal reveal-d1">
+            <div class="about-card__cohort-badge">Interview Mastery</div>
+            <h3 class="about-card__title">Placement &amp; Job Prep</h3>
+            <p class="about-card__desc">Cracking coding rounds at tier-1 product companies requires strong engineering
+              intuition. Nureka builds first-principles problem-solving skills needed for data structures, algorithms,
+              and system design rounds.</p>
+          </article>
+          <article class="about-card about-card--cohort reveal reveal-d2">
+            <div class="about-card__cohort-badge">Practical Foundations</div>
+            <h3 class="about-card__title">Self-Taught Coders</h3>
+            <p class="about-card__desc">Bridge the gap between typing code and understanding the computer science
+              fundamentals. Learn the core principles behind database engines, network layers, and system architectures.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMPARISON TABLE SECTION ============ -->
+    <section class="about-comparison" aria-labelledby="comparisonHeader">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="comparisonHeader">ChatGPT vs. Nureka Socratic AI</h2>
+          <p class="section-subtitle">Why use Nureka instead of asking standard ChatGPT directly?</p>
+        </div>
+        <div class="about-comparison__card reveal">
+          <p class="about-comparison__intro">
+            Standard ChatGPT acts as a <strong>solution generator</strong>—it immediately prints code and textbook
+            definitions, which bypasses your reasoning. Nureka acts as a <strong>teacher</strong>—it holds back the
+            code, asks guided questions, and helps you discover the concepts yourself.
+          </p>
+          <div class="table-container">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Standard ChatGPT</th>
+                  <th>Nureka Socratic AI</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Primary Action</strong></td>
+                  <td>Gives answers</td>
+                  <td>Guides discovery</td>
+                </tr>
+                <tr>
+                  <td><strong>Starting Point</strong></td>
+                  <td>Definitions</td>
+                  <td>Problems</td>
+                </tr>
+                <tr>
+                  <td><strong>Learning Mode</strong></td>
+                  <td>Passive</td>
+                  <td>Active</td>
+                </tr>
+                <tr>
+                  <td><strong>Focus</strong></td>
+                  <td>What</td>
+                  <td>Why</td>
+                </tr>
+                <tr>
+                  <td><strong>Code Delivery</strong></td>
+                  <td>Immediate</td>
+                  <td>Earned through reasoning</td>
+                </tr>
+                <tr>
+                  <td><strong>Result</strong></td>
+                  <td>Short-term recall</td>
+                  <td>Long-term intuition</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACTION FLOW SECTION ============ -->
+    <section class="about-flow" aria-labelledby="flowTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="flowTitle">How a Session Works</h2>
+          <p class="section-subtitle">Starting your first guided discovery is simple.</p>
+        </div>
+        <div class="about-flow__grid">
+          <div class="about-flow__step reveal">
+            <span class="about-flow__step-num">1</span>
+            <h3 class="about-flow__step-title">Choose a Topic</h3>
+            <p class="about-flow__step-desc">Launch Nureka on ChatGPT and select a starting concept, or type a concept
+              you are struggling with.</p>
+          </div>
+          <div class="about-flow__arrow" aria-hidden="true"></div>
+          <div class="about-flow__step reveal reveal-d1">
+            <span class="about-flow__step-num">2</span>
+            <h3 class="about-flow__step-title">Get a Scenario</h3>
+            <p class="about-flow__step-desc">Instead of giving definitions, Nureka presents a simple, real-world
+              challenge related to the concept.</p>
+          </div>
+          <div class="about-flow__arrow" aria-hidden="true"></div>
+          <div class="about-flow__step reveal reveal-d2">
+            <span class="about-flow__step-num">3</span>
+            <h3 class="about-flow__step-title">Derive the Solution</h3>
+            <p class="about-flow__step-desc">Answer questions and explore constraints. You'll name the concept only
+              after you've derived how it works.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA — High Contrast ============ -->
+    <section class="cta-section" id="about-cta" aria-labelledby="ctaTitle">
+      <div class="container">
+        <div class="cta-section__inner">
+          <h2 class="cta-section__title" id="ctaTitle">Start Thinking Like an Engineer.</h2>
+          <p class="cta-section__desc">Join Nureka on ChatGPT and discover concepts through Socratic discovery.</p>
+          <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary btn--large"
+            target="_blank" rel="noopener noreferrer">
+            Launch Nureka on ChatGPT &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER — Minimal ============ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <img src="logo.svg" alt="" class="footer__logo-img">
+          Nureka
+        </div>
+        <p class="footer__tagline">Discover Concepts. Don't Memorize Them.</p>
+        <p class="footer__credit">Built by <strong>Sai Rajiv</strong></p>
+        <p class="footer__copy">&copy; 2026 Nureka. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js?v=3"></script>
+
+</body>
+
+</html>

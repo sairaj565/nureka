@@ -316,18 +316,63 @@ const ChatReveal = (() => {
    ============================================================ */
 
 const ConceptCards = (() => {
+  function spawnSparkles(card) {
+    const container = card.querySelector('.concept-card__answer-container');
+    if (!container) return;
+    
+    const count = 16;
+    const colors = ['#6366F1', '#8B5CF6', '#10B981', '#3B82F6', '#EC4899'];
+    
+    for (let i = 0; i < count; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'sparkle-particle';
+      particle.style.left = '50%';
+      particle.style.top = '50%';
+      
+      const angle = (i / count) * 2 * Math.PI + (Math.random() - 0.5) * 0.3;
+      const distance = 50 + Math.random() * 40;
+      const dx = Math.cos(angle) * distance;
+      const dy = Math.sin(angle) * distance;
+      
+      particle.style.setProperty('--dx', `${dx}px`);
+      particle.style.setProperty('--dy', `${dy}px`);
+      
+      const size = 6 + Math.random() * 5;
+      particle.style.width = `${size}px`;
+      particle.style.height = `${size}px`;
+      
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      particle.style.background = color;
+      particle.style.boxShadow = `0 0 10px ${color}`;
+      
+      container.appendChild(particle);
+      
+      setTimeout(() => {
+        particle.remove();
+      }, 600);
+    }
+  }
+
   function init() {
     document.querySelectorAll('.concept-card').forEach((card) => {
       // Toggle reveal on click
       card.addEventListener('click', () => {
+        const wasRevealed = card.classList.contains('is-revealed');
         card.classList.toggle('is-revealed');
+        if (!wasRevealed && card.classList.contains('is-revealed')) {
+          spawnSparkles(card);
+        }
       });
 
       // Toggle reveal on Enter or Space keys
       card.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
+          const wasRevealed = card.classList.contains('is-revealed');
           card.classList.toggle('is-revealed');
+          if (!wasRevealed && card.classList.contains('is-revealed')) {
+            spawnSparkles(card);
+          }
         }
       });
     });

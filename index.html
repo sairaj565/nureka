@@ -22,7 +22,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=3">
   <link rel="icon" type="image/svg+xml" href="logo.svg">
   <title>Nureka — Discover Concepts. Don't Memorize Them.</title>
 </head>
@@ -40,6 +40,7 @@
         <ul class="navbar__nav" role="list">
           <li><a href="#learning-journey">Journey</a></li>
           <li><a href="#why-understanding-matters">Why Nureka</a></li>
+          <li><a href="#who-is-this-for">For Whom</a></li>
           <li><a href="#discover-concepts">Concepts</a></li>
           <li><a href="#the-nureka-method">The Method</a></li>
           <li><a href="#think-like-an-engineer">Case Studies</a></li>
@@ -79,6 +80,7 @@
       <div class="navbar__mobile" id="mobileMenu">
         <a href="#learning-journey">Journey</a>
         <a href="#why-understanding-matters">Why Nureka</a>
+        <a href="#who-is-this-for">For Whom</a>
         <a href="#discover-concepts">Concepts</a>
         <a href="#the-nureka-method">The Method</a>
         <a href="#think-like-an-engineer">Case Studies</a>
@@ -96,22 +98,33 @@
     <section class="hero" id="hero" aria-labelledby="heroTitle">
       <div class="container">
         <div class="hero__inner">
-          <div class="hero__badge reveal">
-            <span class="hero__badge-icon" aria-hidden="true">🧠</span>
-            The Socratic Companion for Computer Science
+          <div class="hero__content">
+            <div class="hero__badge reveal">
+              <span class="hero__badge-icon" aria-hidden="true">🧠</span>
+              The Socratic Companion for Computer Science
+            </div>
+            <h1 class="hero__title reveal" id="heroTitle">
+              Discover Concepts.<br><em>Don't Memorize Them.</em>
+            </h1>
+            <p class="hero__desc reveal">
+              Nureka helps learners think like engineers by discovering why computer science concepts exist before
+              memorizing definitions. Learn through reasoning, curiosity, and guided discovery.
+            </p>
+            <div class="hero__actions reveal">
+              <a href="about.html" class="btn btn--secondary btn--large">
+                How It Works
+              </a>
+              <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka"
+                class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
+                Try Nureka on ChatGPT
+              </a>
+            </div>
           </div>
-          <h1 class="hero__title reveal" id="heroTitle">
-            Discover Concepts.<br><em>Don't Memorize Them.</em>
-          </h1>
-          <p class="hero__desc reveal">
-            Nureka helps learners think like engineers by discovering why computer science concepts exist before
-            memorizing definitions. Learn through reasoning, curiosity, and guided discovery.
-          </p>
-          <div class="hero__actions reveal">
-            <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka"
-              class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
-              Try Nureka on ChatGPT
-            </a>
+          <div class="hero__image-container reveal reveal-d2">
+            <div class="hero__image-wrapper">
+              <img src="images/hero_illustration.png" alt="Nureka Socratic Learning Flow: Problem to Thinking to Discovery to Understanding flowchart diagram" class="hero__image">
+              <p class="hero__image-caption">How Nureka teaches: Problem &rarr; Thinking &rarr; Discovery &rarr; Understanding</p>
+            </div>
           </div>
         </div>
       </div>
@@ -168,15 +181,31 @@
             <ol class="comparison__steps" aria-label="Traditional learning steps">
               <li class="comparison__step">
                 <span class="comparison__step-num">1</span>
-                <span class="comparison__step-text">Definition</span>
+                <div class="comparison__step-content">
+                  <span class="comparison__step-title">Definition</span>
+                  <span class="comparison__step-desc">A dry, abstract statement of a concept.</span>
+                </div>
               </li>
               <li class="comparison__step">
                 <span class="comparison__step-num">2</span>
-                <span class="comparison__step-text">Memorization</span>
+                <div class="comparison__step-content">
+                  <span class="comparison__step-title">Memorize</span>
+                  <span class="comparison__step-desc">Drill the syntax/formula into memory.</span>
+                </div>
               </li>
               <li class="comparison__step">
                 <span class="comparison__step-num">3</span>
-                <span class="comparison__step-text">Short-Term Recall</span>
+                <div class="comparison__step-content">
+                  <span class="comparison__step-title">Exam</span>
+                  <span class="comparison__step-desc">Regurgitate it quickly under pressure.</span>
+                </div>
+              </li>
+              <li class="comparison__step">
+                <span class="comparison__step-num">4</span>
+                <div class="comparison__step-content">
+                  <span class="comparison__step-title">Forget</span>
+                  <span class="comparison__step-desc">Fades away days later with no core connection.</span>
+                </div>
               </li>
             </ol>
           </article>
@@ -186,19 +215,31 @@
             <ol class="comparison__steps" aria-label="Nureka learning steps">
               <li class="comparison__step">
                 <span class="comparison__step-num">1</span>
-                <span class="comparison__step-text">Problem</span>
+                <div class="comparison__step-content">
+                  <span class="comparison__step-title">Problem</span>
+                  <span class="comparison__step-desc">Start with a real engineering challenge.</span>
+                </div>
               </li>
               <li class="comparison__step">
                 <span class="comparison__step-num">2</span>
-                <span class="comparison__step-text">Reasoning</span>
+                <div class="comparison__step-content">
+                  <span class="comparison__step-title">Reasoning</span>
+                  <span class="comparison__step-desc">Ask "Why?" and explore constraints.</span>
+                </div>
               </li>
               <li class="comparison__step">
                 <span class="comparison__step-num">3</span>
-                <span class="comparison__step-text">Discovery</span>
+                <div class="comparison__step-content">
+                  <span class="comparison__step-title">Discovery</span>
+                  <span class="comparison__step-desc">Derive the concept through guided logic.</span>
+                </div>
               </li>
               <li class="comparison__step">
                 <span class="comparison__step-num">4</span>
-                <span class="comparison__step-text">Understanding</span>
+                <div class="comparison__step-content">
+                  <span class="comparison__step-title">Understanding</span>
+                  <span class="comparison__step-desc">Build deep, permanent intuition that sticks.</span>
+                </div>
               </li>
             </ol>
           </article>
@@ -206,6 +247,33 @@
         <!-- Large center statement -->
         <div class="comparison__statement reveal">
           <p class="comparison__statement-text">Don't just learn what.<br><em>Learn why.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AUDIENCE — Who is this for? ============ -->
+    <section class="audience" id="who-is-this-for" aria-labelledby="audienceTitle">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title" id="audienceTitle">Who is Nureka For?</h2>
+          <p class="section-subtitle">Engineered for anyone who wants to truly understand computer science, not just pass exams.</p>
+        </div>
+        <div class="audience__grid">
+          <article class="audience-card reveal">
+            <div class="audience-card__icon" aria-hidden="true">🎓</div>
+            <h3 class="audience-card__title">College Students</h3>
+            <p class="audience-card__desc">Tired of mugging up dry definitions for semester exams? Nureka makes CS concepts click so you can write answers in your own words with confidence.</p>
+          </article>
+          <article class="audience-card reveal reveal-d1">
+            <div class="audience-card__icon" aria-hidden="true">💼</div>
+            <h3 class="audience-card__title">Placement &amp; Interview Prep</h3>
+            <p class="audience-card__desc">Cracking product-based companies requires first-principles engineering thinking. Nureka helps you build the deep intuition needed for coding and system design rounds.</p>
+          </article>
+          <article class="audience-card reveal reveal-d2">
+            <div class="audience-card__icon" aria-hidden="true">💻</div>
+            <h3 class="audience-card__title">Self-Taught Developers</h3>
+            <p class="audience-card__desc">Bridge the gap between writing code and understanding computer science fundamentals. Learn the "why" behind the tools and frameworks you use daily.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -296,25 +364,25 @@
             <div class="chat-msg chat-msg--student">
               <span class="chat-msg__sender">Student</span>
               <div class="chat-msg__bubble">
-                <p>I'm trying to understand how fast lookups work.</p>
+                <p>How do fast lookups work?</p>
               </div>
             </div>
             <div class="chat-msg chat-msg--nureka">
               <span class="chat-msg__sender">Nureka</span>
               <div class="chat-msg__bubble">
-                <p>Imagine you have one million contacts. Would you check every contact one by one?</p>
+                <p>Would you search one million contacts one by one?</p>
               </div>
             </div>
             <div class="chat-msg chat-msg--student">
               <span class="chat-msg__sender">Student</span>
               <div class="chat-msg__bubble">
-                <p>No, I would look for a shortcut.</p>
+                <p>No.</p>
               </div>
             </div>
             <div class="chat-msg chat-msg--nureka">
               <span class="chat-msg__sender">Nureka</span>
               <div class="chat-msg__bubble">
-                <p>Exactly. That need for a shortcut led engineers to create <strong>Hash Tables</strong>.</p>
+                <p>Then what shortcut would you want?</p>
               </div>
             </div>
             <!-- Typing Indicator (initially hidden) -->
@@ -395,26 +463,58 @@
           <p class="section-subtitle">Every concept exists because a problem needed a solution.</p>
         </div>
         <div class="engineer__grid">
+          <!-- Card 1: Binary Search -->
           <article class="engineer-card reveal">
-            <span class="engineer-card__scenario-label">The Scenario</span>
-            <h3 class="engineer-card__scenario">Phone Book Search</h3>
-            <div class="engineer-card__arrow" aria-hidden="true">↓</div>
-            <span class="engineer-card__concept-label">The Concept</span>
-            <p class="engineer-card__result">Why Binary Search Exists</p>
+            <div class="engineer-card__step">
+              <span class="engineer-card__step-label">Problem</span>
+              <p class="engineer-card__step-text">Search 1 name in a 1,000-page phone book</p>
+            </div>
+            <div class="engineer-card__flow-arrow" aria-hidden="true"></div>
+            <div class="engineer-card__step">
+              <span class="engineer-card__step-label">Thinking</span>
+              <p class="engineer-card__step-text">Halve the search space repeatedly</p>
+            </div>
+            <div class="engineer-card__flow-arrow" aria-hidden="true"></div>
+            <div class="engineer-card__step engineer-card__step--success">
+              <span class="engineer-card__step-label">Discovery</span>
+              <h4 class="engineer-card__step-title">Binary Search</h4>
+            </div>
           </article>
+
+          <!-- Card 2: Process Scheduling -->
           <article class="engineer-card reveal reveal-d1">
-            <span class="engineer-card__scenario-label">The Scenario</span>
-            <h3 class="engineer-card__scenario">Shared Printer Problem</h3>
-            <div class="engineer-card__arrow" aria-hidden="true">↓</div>
-            <span class="engineer-card__concept-label">The Concept</span>
-            <p class="engineer-card__result">Why Process Scheduling Exists</p>
+            <div class="engineer-card__step">
+              <span class="engineer-card__step-label">Problem</span>
+              <p class="engineer-card__step-text">10 users printing documents simultaneously</p>
+            </div>
+            <div class="engineer-card__flow-arrow" aria-hidden="true"></div>
+            <div class="engineer-card__step">
+              <span class="engineer-card__step-label">Thinking</span>
+              <p class="engineer-card__step-text">Need a fair, ordered way to allocate time</p>
+            </div>
+            <div class="engineer-card__flow-arrow" aria-hidden="true"></div>
+            <div class="engineer-card__step engineer-card__step--success">
+              <span class="engineer-card__step-label">Discovery</span>
+              <h4 class="engineer-card__step-title">Process Scheduling</h4>
+            </div>
           </article>
+
+          <!-- Card 3: Hash Tables -->
           <article class="engineer-card reveal reveal-d2">
-            <span class="engineer-card__scenario-label">The Scenario</span>
-            <h3 class="engineer-card__scenario">1 Million Contacts</h3>
-            <div class="engineer-card__arrow" aria-hidden="true">↓</div>
-            <span class="engineer-card__concept-label">The Concept</span>
-            <p class="engineer-card__result">Why Hash Tables Exist</p>
+            <div class="engineer-card__step">
+              <span class="engineer-card__step-label">Problem</span>
+              <p class="engineer-card__step-text">Find 1 contact among 1,000,000 instantly</p>
+            </div>
+            <div class="engineer-card__flow-arrow" aria-hidden="true"></div>
+            <div class="engineer-card__step">
+              <span class="engineer-card__step-label">Thinking</span>
+              <p class="engineer-card__step-text">Compute the memory location directly</p>
+            </div>
+            <div class="engineer-card__flow-arrow" aria-hidden="true"></div>
+            <div class="engineer-card__step engineer-card__step--success">
+              <span class="engineer-card__step-label">Discovery</span>
+              <h4 class="engineer-card__step-title">Hash Table</h4>
+            </div>
           </article>
         </div>
       </div>
@@ -451,7 +551,7 @@
     </div>
   </footer>
 
-  <script src="js/script.js?v=2"></script>
+  <script src="js/script.js?v=3"></script>
 
 </body>
 

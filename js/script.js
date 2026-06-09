@@ -456,3 +456,13 @@ if (document.readyState === 'loading') {
 } else {
   init();
 }
+
+
+function trackNurekaClick(buttonName) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'nureka_gpt_click', {
+      button_name: buttonName,
+      page_location: window.location.pathname
+    });
+  }
+}

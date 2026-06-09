@@ -2,6 +2,15 @@
 <html lang="en" data-theme="dark">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T7SYLWJ3TH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T7SYLWJ3TH');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
@@ -63,8 +72,9 @@
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
             </svg>
           </button>
+          <!-- Tracked CTA: About Page Desktop Header Navbar button targeting Custom GPT -->
           <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary"
-            target="_blank" rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('about_navbar_cta')">
             Try Nureka on ChatGPT
           </a>
         </div>
@@ -81,8 +91,9 @@
         <a href="index.html#discover-concepts">Concepts</a>
         <a href="index.html#the-nureka-method">The Method</a>
         <a href="index.html#think-like-an-engineer">Case Studies</a>
+        <!-- Tracked CTA: About Page Mobile Navigation Drawer button targeting Custom GPT -->
         <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary"
-          target="_blank" rel="noopener noreferrer">
+          target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('about_mobile_nav_cta')">
           Try Nureka on ChatGPT
         </a>
       </div>
@@ -279,8 +290,9 @@
         <div class="cta-section__inner">
           <h2 class="cta-section__title" id="ctaTitle">Start Thinking Like an Engineer.</h2>
           <p class="cta-section__desc">Join Nureka on ChatGPT and discover concepts through Socratic discovery.</p>
+          <!-- Tracked CTA: About Page Final Bottom CTA button targeting Custom GPT -->
           <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary btn--large"
-            target="_blank" rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('about_final_cta')">
             Launch Nureka on ChatGPT &rarr;
           </a>
         </div>

@@ -2,6 +2,15 @@
 <html lang="en" data-theme="dark">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T7SYLWJ3TH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T7SYLWJ3TH');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
@@ -66,8 +75,9 @@
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
             </svg>
           </button>
+          <!-- Tracked CTA: Desktop Header Navbar button targeting Custom GPT -->
           <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary"
-            target="_blank" rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('navbar_cta')">
             Try Nureka on ChatGPT
           </a>
         </div>
@@ -84,8 +94,9 @@
         <a href="#discover-concepts">Concepts</a>
         <a href="#the-nureka-method">The Method</a>
         <a href="#think-like-an-engineer">Case Studies</a>
+        <!-- Tracked CTA: Mobile Navigation Drawer button targeting Custom GPT -->
         <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary"
-          target="_blank" rel="noopener noreferrer">
+          target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('mobile_nav_cta')">
           Try Nureka on ChatGPT
         </a>
       </div>
@@ -114,8 +125,9 @@
               <a href="about.html" class="btn btn--secondary btn--large">
                 How It Works
               </a>
+              <!-- Tracked CTA: Hero Main CTA button targeting Custom GPT -->
               <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka"
-                class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
+                class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('hero_cta')">
                 Try Nureka on ChatGPT
               </a>
             </div>
@@ -399,7 +411,8 @@
           <div class="method__footer">
             <div class="method__cta">
               <span class="method__cta-text">Ready to explore this idea?</span>
-              <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer">
+              <!-- Tracked CTA: The Nureka Method Conversation simulator CTA button targeting Custom GPT -->
+              <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary btn--small" target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('chat_demo_cta')">
                 Try Nureka on ChatGPT &rarr;
               </a>
             </div>
@@ -416,38 +429,45 @@
           <p class="section-subtitle">Explore the full breadth of computer science through guided discovery.</p>
         </div>
         <div class="topics__grid">
+          <!-- Tracked CTA: Topics Card - Programming targeting Custom GPT -->
           <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="topic-card reveal"
-            target="_blank" rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('programming_card')">
             <span class="topic-card__icon" aria-hidden="true">⚙️</span>
             <span class="topic-card__name">Programming</span>
           </a>
+          <!-- Tracked CTA: Topics Card - Data Structures & Algorithms targeting Custom GPT -->
           <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="topic-card reveal reveal-d1"
-            target="_blank" rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('dsa_card')">
             <span class="topic-card__icon" aria-hidden="true">🌲</span>
             <span class="topic-card__name">Data Structures &amp; Algorithms</span>
           </a>
+          <!-- Tracked CTA: Topics Card - Operating Systems targeting Custom GPT -->
           <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="topic-card reveal reveal-d2"
-            target="_blank" rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('os_card')">
             <span class="topic-card__icon" aria-hidden="true">🖥️</span>
             <span class="topic-card__name">Operating Systems</span>
           </a>
+          <!-- Tracked CTA: Topics Card - Databases targeting Custom GPT -->
           <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="topic-card reveal reveal-d3"
-            target="_blank" rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('database_card')">
             <span class="topic-card__icon" aria-hidden="true">🗄️</span>
             <span class="topic-card__name">Databases</span>
           </a>
+          <!-- Tracked CTA: Topics Card - Networks targeting Custom GPT -->
           <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="topic-card reveal reveal-d4"
-            target="_blank" rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('networks_card')">
             <span class="topic-card__icon" aria-hidden="true">🌐</span>
             <span class="topic-card__name">Computer Networks</span>
           </a>
+          <!-- Tracked CTA: Topics Card - System Design targeting Custom GPT -->
           <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="topic-card reveal reveal-d5"
-            target="_blank" rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('system_design_card')">
             <span class="topic-card__icon" aria-hidden="true">🏗️</span>
             <span class="topic-card__name">System Design</span>
           </a>
+          <!-- Tracked CTA: Topics Card - AI & ML targeting Custom GPT -->
           <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="topic-card reveal reveal-d6"
-            target="_blank" rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('ai_ml_card')">
             <span class="topic-card__icon" aria-hidden="true">🤖</span>
             <span class="topic-card__name">AI &amp; Machine Learning</span>
           </a>
@@ -526,8 +546,9 @@
         <div class="cta-section__inner reveal">
           <h2 class="cta-section__title" id="ctaTitle">Start Thinking Like an Engineer.</h2>
           <p class="cta-section__desc">Discover concepts through reasoning, not memorization.</p>
+          <!-- Tracked CTA: Final Bottom High Contrast CTA button targeting Custom GPT -->
           <a href="https://chatgpt.com/g/g-6a1ee0e6dd588191a86c78e9c768afd8-nureka" class="btn btn--primary btn--large"
-            target="_blank" rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer" onclick="trackNurekaClick('final_cta')">
             Try Nureka on ChatGPT
           </a>
         </div>
